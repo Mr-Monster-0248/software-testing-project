@@ -17,7 +17,7 @@ const urls: testObject[] = [
 ];
 
 for (const url of urls) {
-  test(`Test for ${url.url} url`, async ({ page }) => {
+  test(`Should go to ${url.url} url`, async ({ page }) => {
     await page.goto(baseUrl);
     await page.locator(`text=${url.text}`).click();
 
