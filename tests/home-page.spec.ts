@@ -26,4 +26,12 @@ for (const url of urls) {
   });
 }
 
-// do the same for all the home page test
+for (const url of urls) {
+  test(`Should go to ${baseUrl} from ${url.url}`, async ({ page }) => {
+    await page.goto(`${baseUrl}${url.url}`);
+    await page.locator(`text=Home`).click();
+
+    const currentURL = page.url();
+    expect(currentURL).toEqual(`${baseUrl}/`);
+  });
+}
