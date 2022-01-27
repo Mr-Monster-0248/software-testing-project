@@ -34,8 +34,9 @@ const input_names = [
 ];
 
 const addEmployeeUrl = "https://g.hr.dmerej.info/add_employee";
+const employeesUrl = "https://g.hr.dmerej.info/employees";
 
-for (let [key, value] of Object.entries(bob)) {
+for (let [key] of Object.entries(bob)) {
   test(`Should fail because of missing key : ${key}`, async ({ page }) => {
     await page.goto(addEmployeeUrl);
 
@@ -61,5 +62,5 @@ test(`Should add a new employee`, async ({ page }) => {
   await page.locator('button[type="submit"]').click();
   await page.screenshot({ path: "screenshot_success.png" });
   const currentURL = page.url();
-  expect(currentURL).toEqual("https://g.hr.dmerej.info/employees");
+  expect(currentURL).toEqual(employeesUrl);
 });
