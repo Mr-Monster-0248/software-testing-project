@@ -1,8 +1,15 @@
 {
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:http": "jest"
   },
   "devDependencies": {
-    "@playwright/test": "^1.18.0"
+    "@playwright/test": "^1.18.0",
+    "@types/jest": "^27.4.0",
+    "ts-jest": "^27.1.3"
+  },
+  "dependencies": {
+    "@databases/sqlite": "^3.0.0",
+    "axios": "^0.25.0"
   }
 }
