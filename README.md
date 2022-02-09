@@ -12,6 +12,12 @@ npm install
 npm run test
 ```
 
+## Running the http tests
+
+```shell
+npm run test:http
+```
+
 ## Running a specific file
 
 ```
@@ -24,6 +30,5 @@ npx playwright test reset-db.spec.ts
 ```
 
 ## Google Drive Link ( Test plan / Logbook )
-```
-https://drive.google.com/drive/folders/1OsfIZ1H4TDAuk7uScUroqMxbEILvAgPn
-```
+
+- https://drive.google.com/drive/folders/1OsfIZ1H4TDAuk7uScUroqMxbEILvAgPn
