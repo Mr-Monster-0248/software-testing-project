@@ -13,9 +13,9 @@ test(`Should add a new team`, async ({ page }) => {
 });
 
 test(`Should fail to add a team due to missing name`, async ({ page }) => {
-    await page.goto(baseUrl + "add_team");
-    await page.locator('button[type="submit"]').click();
-  
-    await page.screenshot({ path: "screenshot_add_team_failure.png" });
-    await expect(page.locator("text='Server Error (500)'")).toHaveCount(1);
-  });
+  await page.goto(baseUrl + "add_team");
+  await page.locator('button[type="submit"]').click();
+
+  await page.screenshot({ path: "screenshot_add_team_failure.png" });
+  await expect(page.locator("text='Server Error (500)'")).toHaveCount(1);
+});

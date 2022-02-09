@@ -18,5 +18,12 @@ npm run test
 npx playwright test [filename]
 
 npx playwright test add-employee.spec.ts
+npx playwright test add-team.spec.ts
 npx playwright test home-page.spec.ts
+npx playwright test reset-db.spec.ts
+```
+
+## Google Drive Link ( Test plan / Logbook )
+```
+https://drive.google.com/drive/folders/1OsfIZ1H4TDAuk7uScUroqMxbEILvAgPn
 ```
